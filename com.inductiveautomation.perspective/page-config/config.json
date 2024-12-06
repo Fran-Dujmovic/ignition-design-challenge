@@ -1,0 +1,46 @@
+{
+  "pages": {
+    "/": {
+      "viewPath": "Overview"
+    },
+    "/alarms-view": {
+      "title": "",
+      "viewPath": "Alarms View"
+    },
+    "/overview-instances": {
+      "title": "",
+      "viewPath": "overview instances"
+    },
+    "/popup-details/:instanceParam": {
+      "title": "",
+      "viewPath": "Popup Details"
+    },
+    "/reports-view": {
+      "title": "",
+      "viewPath": "Reports View"
+    },
+    "/station-view/:stationNum": {
+      "title": "",
+      "viewPath": "Station View"
+    }
+  },
+  "sharedDocks": {
+    "cornerPriority": "left-right",
+    "left": [
+      {
+        "anchor": "fixed",
+        "autoBreakpoint": 480,
+        "content": "push",
+        "handle": "hide",
+        "iconUrl": "",
+        "id": "",
+        "modal": false,
+        "resizable": false,
+        "show": "visible",
+        "size": 200,
+        "viewParams": {},
+        "viewPath": "sidebar"
+      }
+    ]
+  }
+}

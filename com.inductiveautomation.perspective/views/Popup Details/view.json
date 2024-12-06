@@ -1,0 +1,683 @@
+{
+  "custom": {},
+  "params": {
+    "instanceParam": 1
+  },
+  "propConfig": {
+    "params.instanceParam": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 503,
+      "width": 710
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Station Number Label"
+                },
+                "position": {
+                  "basis": "50px"
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {
+                          "instanceParam": "{view.params.instanceParam}"
+                        },
+                        "tagPath": "[default]Station {instanceParam}/Parameters.brewStation"
+                      },
+                      "transforms": [
+                        {
+                          "expression": "concat(\"Brewing Station: \",{value})",
+                          "type": "expression"
+                        }
+                      ],
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "textStyle": {
+                    "classes": "labelStyles"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Brew Type Label"
+                },
+                "position": {
+                  "basis": "32px"
+                },
+                "props": {
+                  "text": "Brew Type:"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Brew Type Text Field"
+                },
+                "position": {
+                  "basis": "39px"
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {
+                          "instanceParam": "{view.params.instanceParam}"
+                        },
+                        "tagPath": "[default]Station {instanceParam}/brewType.value"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "placeholder": "Coffee being brewed: "
+                },
+                "type": "ia.input.text-field"
+              },
+              {
+                "meta": {
+                  "name": "High Temp Setpoint Label"
+                },
+                "position": {
+                  "basis": "32px"
+                },
+                "props": {
+                  "text": "High Temp Setpoint:"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "High Temp Setpoint"
+                },
+                "position": {
+                  "basis": "37px"
+                },
+                "propConfig": {
+                  "props.value": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {
+                          "instanceParam": "{view.params.instanceParam}"
+                        },
+                        "tagPath": "[default]Station {instanceParam}/highSP.value"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "format": "0,0",
+                  "placeholder": "Enter High Temp Setpoint:"
+                },
+                "type": "ia.input.numeric-entry-field"
+              },
+              {
+                "meta": {
+                  "name": "Low Temp Setpoint Label"
+                },
+                "position": {
+                  "basis": "32px"
+                },
+                "props": {
+                  "text": "Low Temp Setpoint:"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Low Temp Setpoint"
+                },
+                "position": {
+                  "basis": "37px"
+                },
+                "propConfig": {
+                  "props.value": {
+                    "binding": {
+                      "config": {
+                        "bidirectional": true,
+                        "fallbackDelay": 2.5,
+                        "mode": "indirect",
+                        "references": {
+                          "instanceParam": "{view.params.instanceParam}"
+                        },
+                        "tagPath": "[default]Station {instanceParam}/lowSP.value"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "format": "0,0",
+                  "placeholder": "Enter Low Temp Setpoint:"
+                },
+                "type": "ia.input.numeric-entry-field"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Brew Station Popup Vessel"
+                    },
+                    "position": {
+                      "basis": "100px",
+                      "grow": 1
+                    },
+                    "propConfig": {
+                      "props.state": {
+                        "binding": {
+                          "config": {
+                            "fallbackDelay": 2.5,
+                            "mode": "indirect",
+                            "references": {
+                              "instanceParam": "{view.params.instanceParam}"
+                            },
+                            "tagPath": "[default]Station {instanceParam}/status.value"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": null,
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": 0,
+                                  "output": "stopped"
+                                },
+                                {
+                                  "input": 1,
+                                  "output": "running"
+                                },
+                                {
+                                  "input": 2,
+                                  "output": "faulted"
+                                }
+                              ],
+                              "outputType": "scalar",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "tag"
+                        }
+                      }
+                    },
+                    "props": {
+                      "appearance": "simple",
+                      "label": {
+                        "style": {
+                          "fontSize": 15,
+                          "fontWeight": "bold"
+                        },
+                        "text": "Brew Station"
+                      },
+                      "value": {
+                        "location": "hidden"
+                      }
+                    },
+                    "type": "ia.symbol.vessel"
+                  }
+                ],
+                "meta": {
+                  "name": "Brew Vessel Flex Container"
+                },
+                "position": {
+                  "basis": "185px"
+                },
+                "props": {
+                  "alignItems": "center",
+                  "direction": "column",
+                  "justify": "center"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "Station View Flex Container"
+            },
+            "props": {
+              "alignItems": "center",
+              "direction": "column"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Tag History Power Chart"
+                },
+                "position": {
+                  "basis": "800px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.pens[0].data.source": {
+                    "binding": {
+                      "config": {
+                        "expression": "\"histprov:MySQL_Database:/drv:rio-oso:default:/tag:station \" + {view.params.instanceParam} + \"/highsp\""
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.pens[1].data.source": {
+                    "binding": {
+                      "config": {
+                        "expression": "\"histprov:MySQL_Database:/drv:rio-oso:default:/tag:station \" + {view.params.instanceParam} + \"/lowsp\""
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.pens[2].data.source": {
+                    "binding": {
+                      "config": {
+                        "expression": "\"histprov:MySQL_Database:/drv:rio-oso:default:/tag:station \" + {view.params.instanceParam} + \"/watertemp\""
+                      },
+                      "type": "expr"
+                    }
+                  },
+                  "props.pens[3].data.source": {
+                    "binding": {
+                      "config": {
+                        "expression": "\"histprov:MySQL_Database:/drv:rio-oso:default:/tag:station \" + {view.params.instanceParam} + \"/status\""
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "config": {
+                    "rangeEndDate": {
+                      "$": [
+                        "ts",
+                        0,
+                        1733422682764
+                      ],
+                      "$ts": 1733422586709
+                    },
+                    "rangeSelectorPen": "histprov:MySQL_Database:/drv:rio-oso:default:/tag:station 1/watertemp",
+                    "rangeStartDate": {
+                      "$": [
+                        "ts",
+                        0,
+                        1733422682764
+                      ],
+                      "$ts": 1733393882709
+                    }
+                  },
+                  "interaction": {
+                    "chartZoomLevel": 1,
+                    "fullscreen": true,
+                    "rangeZoomLevel": 1
+                  },
+                  "pens": [
+                    {
+                      "axis": "",
+                      "data": {
+                        "aggregateMode": "default"
+                      },
+                      "display": {
+                        "breakLine": true,
+                        "interpolation": "curveLinear",
+                        "radius": 3,
+                        "styles": {
+                          "highlighted": {
+                            "fill": {
+                              "color": "#63BEA2",
+                              "opacity": 1
+                            },
+                            "stroke": {
+                              "color": "#63BEA2",
+                              "dashArray": 0,
+                              "opacity": 1,
+                              "width": 1
+                            }
+                          },
+                          "muted": {
+                            "fill": {
+                              "color": "#63BEA2",
+                              "opacity": 0.4
+                            },
+                            "stroke": {
+                              "color": "#63BEA2",
+                              "dashArray": 0,
+                              "opacity": 0.4,
+                              "width": 1
+                            }
+                          },
+                          "normal": {
+                            "fill": {
+                              "color": "#63BEA2",
+                              "opacity": 0.8
+                            },
+                            "stroke": {
+                              "color": "#63BEA2",
+                              "dashArray": 0,
+                              "opacity": 0.8,
+                              "width": 1
+                            }
+                          },
+                          "selected": {
+                            "fill": {
+                              "color": "#63BEA2",
+                              "opacity": 1
+                            },
+                            "stroke": {
+                              "color": "#63BEA2",
+                              "dashArray": 0,
+                              "opacity": 1,
+                              "width": 1
+                            }
+                          }
+                        },
+                        "type": "line"
+                      },
+                      "enabled": true,
+                      "name": "High Setpoint",
+                      "plot": 0,
+                      "selectable": true,
+                      "visible": true
+                    },
+                    {
+                      "axis": "",
+                      "data": {
+                        "aggregateMode": "default"
+                      },
+                      "display": {
+                        "breakLine": true,
+                        "interpolation": "curveLinear",
+                        "radius": 3,
+                        "styles": {
+                          "highlighted": {
+                            "fill": {
+                              "color": "#FC8D62",
+                              "opacity": 1
+                            },
+                            "stroke": {
+                              "color": "#FC8D62",
+                              "dashArray": 0,
+                              "opacity": 1,
+                              "width": 1
+                            }
+                          },
+                          "muted": {
+                            "fill": {
+                              "color": "#FC8D62",
+                              "opacity": 0.4
+                            },
+                            "stroke": {
+                              "color": "#FC8D62",
+                              "dashArray": 0,
+                              "opacity": 0.4,
+                              "width": 1
+                            }
+                          },
+                          "normal": {
+                            "fill": {
+                              "color": "#FC8D62",
+                              "opacity": 0.8
+                            },
+                            "stroke": {
+                              "color": "#FC8D62",
+                              "dashArray": 0,
+                              "opacity": 0.8,
+                              "width": 1
+                            }
+                          },
+                          "selected": {
+                            "fill": {
+                              "color": "#FC8D62",
+                              "opacity": 1
+                            },
+                            "stroke": {
+                              "color": "#FC8D62",
+                              "dashArray": 0,
+                              "opacity": 1,
+                              "width": 1
+                            }
+                          }
+                        },
+                        "type": "line"
+                      },
+                      "enabled": true,
+                      "name": "Low Setpoint",
+                      "plot": 0,
+                      "selectable": true,
+                      "visible": true
+                    },
+                    {
+                      "axis": "",
+                      "data": {
+                        "aggregateMode": "default"
+                      },
+                      "display": {
+                        "breakLine": true,
+                        "interpolation": "curveLinear",
+                        "radius": 3,
+                        "styles": {
+                          "highlighted": {
+                            "fill": {
+                              "color": "#8DA0CB",
+                              "opacity": 1
+                            },
+                            "stroke": {
+                              "color": "#8da0cb",
+                              "dashArray": 0,
+                              "opacity": 1,
+                              "width": 1
+                            }
+                          },
+                          "muted": {
+                            "fill": {
+                              "color": "#8DA0CB",
+                              "opacity": 0.4
+                            },
+                            "stroke": {
+                              "color": "#8da0cb",
+                              "dashArray": 0,
+                              "opacity": 0.4,
+                              "width": 1
+                            }
+                          },
+                          "normal": {
+                            "fill": {
+                              "color": "#8DA0CB",
+                              "opacity": 0.8
+                            },
+                            "stroke": {
+                              "color": "#8da0cb",
+                              "dashArray": 0,
+                              "opacity": 0.8,
+                              "width": 1
+                            }
+                          },
+                          "selected": {
+                            "fill": {
+                              "color": "#8DA0CB",
+                              "opacity": 1
+                            },
+                            "stroke": {
+                              "color": "#8da0cb",
+                              "dashArray": 0,
+                              "opacity": 1,
+                              "width": 1
+                            }
+                          }
+                        },
+                        "type": "line"
+                      },
+                      "enabled": true,
+                      "name": "Brewing Temperature",
+                      "plot": 0,
+                      "selectable": true,
+                      "visible": true
+                    },
+                    {
+                      "axis": "",
+                      "data": {
+                        "aggregateMode": "default"
+                      },
+                      "display": {
+                        "breakLine": true,
+                        "interpolation": "curveLinear",
+                        "radius": 3,
+                        "styles": {
+                          "highlighted": {
+                            "fill": {
+                              "color": "#E78AC3",
+                              "opacity": 1
+                            },
+                            "stroke": {
+                              "color": "#E78AC3",
+                              "dashArray": 0,
+                              "opacity": 1,
+                              "width": 1
+                            }
+                          },
+                          "muted": {
+                            "fill": {
+                              "color": "#E78AC3",
+                              "opacity": 0.4
+                            },
+                            "stroke": {
+                              "color": "#E78AC3",
+                              "dashArray": 0,
+                              "opacity": 0.4,
+                              "width": 1
+                            }
+                          },
+                          "normal": {
+                            "fill": {
+                              "color": "#E78AC3",
+                              "opacity": 0.8
+                            },
+                            "stroke": {
+                              "color": "#E78AC3",
+                              "dashArray": 0,
+                              "opacity": 0.8,
+                              "width": 1
+                            }
+                          },
+                          "selected": {
+                            "fill": {
+                              "color": "#E78AC3",
+                              "opacity": 1
+                            },
+                            "stroke": {
+                              "color": "#E78AC3",
+                              "dashArray": 0,
+                              "opacity": 1,
+                              "width": 1
+                            }
+                          }
+                        },
+                        "type": "line"
+                      },
+                      "enabled": true,
+                      "name": "Brewing Status",
+                      "plot": 1,
+                      "selectable": true,
+                      "visible": true
+                    }
+                  ],
+                  "plots": [
+                    {
+                      "color": "#FFFFFF",
+                      "markers": [],
+                      "relativeWeight": 1,
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    {
+                      "color": "#FFFFFF",
+                      "markers": [],
+                      "relativeWeight": 1,
+                      "style": {
+                        "classes": ""
+                      }
+                    }
+                  ]
+                },
+                "type": "ia.chart.powerchart"
+              }
+            ],
+            "meta": {
+              "name": "Tag History Flex Container"
+            },
+            "position": {
+              "tabIndex": 1
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "AlarmStatusTable"
+                },
+                "position": {
+                  "basis": "800px"
+                },
+                "type": "ia.display.alarmstatustable"
+              }
+            ],
+            "meta": {
+              "name": "Alarms Flex Container"
+            },
+            "position": {
+              "tabIndex": 2
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "Popup tab container"
+        },
+        "position": {
+          "basis": "300px",
+          "grow": 1
+        },
+        "props": {
+          "tabs": [
+            "Station View",
+            "Tag History",
+            "Alarms"
+          ]
+        },
+        "type": "ia.container.tab"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "justify": "center"
+    },
+    "type": "ia.container.flex"
+  }
+}
