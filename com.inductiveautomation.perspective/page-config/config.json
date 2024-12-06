@@ -37,7 +37,7 @@
         "modal": false,
         "resizable": false,
         "show": "visible",
-        "size": 200,
+        "size": 150,
         "viewParams": {},
         "viewPath": "sidebar"
       }
