@@ -1,0 +1,541 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 770,
+      "width": 245
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "sidebar navigation"
+        },
+        "position": {
+          "basis": "200px",
+          "grow": 1
+        },
+        "props": {
+          "items": [
+            {
+              "backActionText": "",
+              "enabled": true,
+              "items": [],
+              "label": {
+                "icon": {
+                  "path": "material/home"
+                },
+                "text": "Overview"
+              },
+              "navIcon": {
+                "color": "",
+                "path": "material/chevron_right"
+              },
+              "resetOnClick": false,
+              "showHeader": true,
+              "style": {
+                "classes": ""
+              },
+              "target": "/",
+              "visible": true
+            },
+            {
+              "backActionText": "",
+              "enabled": true,
+              "items": [
+                {
+                  "backActionText": "",
+                  "enabled": true,
+                  "items": [],
+                  "label": {
+                    "icon": {
+                      "path": "material/free_breakfast"
+                    },
+                    "text": "Station 1"
+                  },
+                  "navIcon": {
+                    "path": ""
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/station-view/1",
+                  "visible": true
+                },
+                {
+                  "backActionText": "",
+                  "enabled": true,
+                  "items": [],
+                  "label": {
+                    "icon": {
+                      "path": "material/free_breakfast"
+                    },
+                    "text": "Station 2"
+                  },
+                  "navIcon": {
+                    "path": ""
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/station-view/2",
+                  "visible": true
+                },
+                {
+                  "backActionText": "",
+                  "enabled": true,
+                  "items": [],
+                  "label": {
+                    "icon": {
+                      "path": "material/free_breakfast"
+                    },
+                    "text": "Station 3"
+                  },
+                  "navIcon": {
+                    "path": ""
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/station-view/3",
+                  "visible": true
+                },
+                {
+                  "backActionText": "",
+                  "enabled": true,
+                  "items": [],
+                  "label": {
+                    "icon": {
+                      "path": "material/free_breakfast"
+                    },
+                    "text": "Station 4"
+                  },
+                  "navIcon": {
+                    "path": ""
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/station-view/4",
+                  "visible": true
+                },
+                {
+                  "backActionText": "",
+                  "enabled": true,
+                  "items": [],
+                  "label": {
+                    "icon": {
+                      "path": "material/free_breakfast"
+                    },
+                    "text": "Station 5"
+                  },
+                  "navIcon": {
+                    "path": ""
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/station-view/5",
+                  "visible": true
+                },
+                {
+                  "backActionText": "",
+                  "enabled": true,
+                  "items": [],
+                  "label": {
+                    "icon": {
+                      "path": "material/free_breakfast"
+                    },
+                    "text": "Station 6"
+                  },
+                  "navIcon": {
+                    "path": ""
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/station-view/6",
+                  "visible": true
+                },
+                {
+                  "backActionText": "",
+                  "enabled": true,
+                  "items": [],
+                  "label": {
+                    "icon": {
+                      "path": "material/free_breakfast"
+                    },
+                    "text": "Station 7"
+                  },
+                  "navIcon": {
+                    "path": ""
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/station-view/7",
+                  "visible": true
+                },
+                {
+                  "backActionText": "",
+                  "enabled": true,
+                  "items": [],
+                  "label": {
+                    "icon": {
+                      "path": "material/free_breakfast"
+                    },
+                    "text": "Station 8"
+                  },
+                  "navIcon": {
+                    "path": ""
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/station-view/8",
+                  "visible": true
+                },
+                {
+                  "backActionText": "",
+                  "enabled": true,
+                  "items": [],
+                  "label": {
+                    "icon": {
+                      "path": "material/free_breakfast"
+                    },
+                    "text": "Station 9"
+                  },
+                  "navIcon": {
+                    "path": ""
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/station-view/9",
+                  "visible": true
+                },
+                {
+                  "backActionText": "",
+                  "enabled": true,
+                  "items": [],
+                  "label": {
+                    "icon": {
+                      "path": "material/free_breakfast"
+                    },
+                    "text": "Station 10"
+                  },
+                  "navIcon": {
+                    "path": ""
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/station-view/10",
+                  "visible": true
+                },
+                {
+                  "backActionText": "",
+                  "enabled": true,
+                  "items": [],
+                  "label": {
+                    "icon": {
+                      "path": "material/free_breakfast"
+                    },
+                    "text": "Station 11"
+                  },
+                  "navIcon": {
+                    "path": ""
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/station-view/11",
+                  "visible": true
+                },
+                {
+                  "backActionText": "",
+                  "enabled": true,
+                  "items": [],
+                  "label": {
+                    "icon": {
+                      "path": "material/free_breakfast"
+                    },
+                    "text": "Station 12"
+                  },
+                  "navIcon": {
+                    "path": ""
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/station-view/12",
+                  "visible": true
+                },
+                {
+                  "backActionText": "",
+                  "enabled": true,
+                  "items": [],
+                  "label": {
+                    "icon": {
+                      "path": "material/free_breakfast"
+                    },
+                    "text": "Station 13"
+                  },
+                  "navIcon": {
+                    "path": ""
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/station-view/13",
+                  "visible": true
+                },
+                {
+                  "backActionText": "",
+                  "enabled": true,
+                  "items": [],
+                  "label": {
+                    "icon": {
+                      "path": "material/free_breakfast"
+                    },
+                    "text": "Station 14"
+                  },
+                  "navIcon": {
+                    "path": ""
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/station-view/14",
+                  "visible": true
+                },
+                {
+                  "backActionText": "",
+                  "enabled": true,
+                  "items": [],
+                  "label": {
+                    "icon": {
+                      "path": "material/free_breakfast"
+                    },
+                    "text": "Station 15"
+                  },
+                  "navIcon": {
+                    "path": ""
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/station-view/15",
+                  "visible": true
+                },
+                {
+                  "backActionText": "",
+                  "enabled": true,
+                  "items": [],
+                  "label": {
+                    "icon": {
+                      "path": "material/free_breakfast"
+                    },
+                    "text": "Station 16"
+                  },
+                  "navIcon": {
+                    "path": ""
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/station-view/16",
+                  "visible": true
+                },
+                {
+                  "backActionText": "",
+                  "enabled": true,
+                  "items": [],
+                  "label": {
+                    "icon": {
+                      "path": "material/free_breakfast"
+                    },
+                    "text": "Station 17"
+                  },
+                  "navIcon": {
+                    "path": ""
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/station-view/17",
+                  "visible": true
+                },
+                {
+                  "backActionText": "",
+                  "enabled": true,
+                  "items": [],
+                  "label": {
+                    "icon": {
+                      "path": "material/free_breakfast"
+                    },
+                    "text": "Station 18"
+                  },
+                  "navIcon": {
+                    "path": ""
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/station-view/18",
+                  "visible": true
+                },
+                {
+                  "backActionText": "",
+                  "enabled": true,
+                  "items": [],
+                  "label": {
+                    "icon": {
+                      "path": "material/free_breakfast"
+                    },
+                    "text": "Station 19"
+                  },
+                  "navIcon": {
+                    "path": ""
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/station-view/19",
+                  "visible": true
+                },
+                {
+                  "backActionText": "",
+                  "enabled": true,
+                  "items": [],
+                  "label": {
+                    "icon": {
+                      "path": "material/free_breakfast"
+                    },
+                    "text": "Station 20"
+                  },
+                  "navIcon": {
+                    "path": ""
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/station-view/20",
+                  "visible": true
+                }
+              ],
+              "label": {
+                "icon": {
+                  "path": "material/business"
+                },
+                "text": "Station Details"
+              },
+              "navIcon": {
+                "color": "",
+                "path": "material/chevron_right"
+              },
+              "resetOnClick": false,
+              "showHeader": true,
+              "style": {
+                "classes": ""
+              },
+              "target": "",
+              "visible": true
+            },
+            {
+              "backActionText": "",
+              "enabled": true,
+              "items": [],
+              "label": {
+                "icon": {
+                  "path": "material/report"
+                },
+                "text": "Reports"
+              },
+              "navIcon": {
+                "color": "",
+                "path": "material/chevron_right"
+              },
+              "resetOnClick": false,
+              "showHeader": true,
+              "style": {
+                "classes": ""
+              },
+              "target": "/reports-view",
+              "visible": true
+            },
+            {
+              "backActionText": "",
+              "enabled": true,
+              "items": [],
+              "label": {
+                "icon": {
+                  "path": "material/access_alarms"
+                },
+                "text": "Alarms"
+              },
+              "navIcon": {
+                "color": "",
+                "path": "material/chevron_right"
+              },
+              "resetOnClick": false,
+              "showHeader": true,
+              "style": {
+                "classes": ""
+              },
+              "target": "/alarms-view",
+              "visible": true
+            }
+          ]
+        },
+        "type": "ia.navigation.menutree"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.flex"
+  }
+}
