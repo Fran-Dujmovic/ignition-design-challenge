@@ -7,6 +7,9 @@
       "title": "",
       "viewPath": "Alarms View"
     },
+    "/logout": {
+      "viewPath": "logout"
+    },
     "/overview-instances": {
       "title": "",
       "viewPath": "overview instances"
@@ -25,6 +28,22 @@
     }
   },
   "sharedDocks": {
+    "bottom": [
+      {
+        "anchor": "fixed",
+        "autoBreakpoint": 480,
+        "content": "push",
+        "handle": "hide",
+        "iconUrl": "",
+        "id": "",
+        "modal": false,
+        "resizable": false,
+        "show": "visible",
+        "size": 50,
+        "viewParams": {},
+        "viewPath": "logout"
+      }
+    ],
     "cornerPriority": "left-right",
     "left": [
       {
@@ -37,7 +56,7 @@
         "modal": false,
         "resizable": false,
         "show": "visible",
-        "size": 150,
+        "size": 225,
         "viewParams": {},
         "viewPath": "sidebar"
       }
