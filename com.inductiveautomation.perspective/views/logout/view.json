@@ -1,0 +1,79 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 74,
+      "width": 471
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "events": {
+              "component": {
+                "onActionPerformed": {
+                  "config": {},
+                  "scope": "C",
+                  "type": "logout"
+                }
+              }
+            },
+            "meta": {
+              "name": "Logout Button"
+            },
+            "position": {
+              "basis": "140px",
+              "grow": 1
+            },
+            "props": {
+              "confirm": {
+                "enabled": true
+              },
+              "readyState": {
+                "icon": {
+                  "path": "material/login",
+                  "style": {
+                    "height": "24px",
+                    "width": "2rem"
+                  }
+                },
+                "text": "Logout"
+              },
+              "writingState": {
+                "icon": {
+                  "path": "material/hourglass_empty",
+                  "style": {
+                    "height": "24px",
+                    "width": "2rem"
+                  }
+                },
+                "text": "Writing..."
+              }
+            },
+            "type": "ia.input.oneshotbutton"
+          }
+        ],
+        "meta": {
+          "name": "Logout Flex Container"
+        },
+        "position": {
+          "basis": "165px"
+        },
+        "props": {
+          "justify": "center"
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "justify": "flex-end"
+    },
+    "type": "ia.container.flex"
+  }
+}
