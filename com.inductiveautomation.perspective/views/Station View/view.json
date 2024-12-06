@@ -318,6 +318,9 @@
               "basis": "96px"
             },
             "props": {
+              "style": {
+                "backgroundColor": "#65BA7D"
+              },
               "text": "Details"
             },
             "type": "ia.input.button"
