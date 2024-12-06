@@ -1,0 +1,350 @@
+{
+  "custom": {},
+  "params": {
+    "stationNum": 1
+  },
+  "propConfig": {
+    "params.stationNum": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 744,
+      "width": 670
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Station Number"
+        },
+        "position": {
+          "basis": "56px"
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "expression": "concat(\"Station Number: \", {view.params.stationNum})"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "textStyle": {
+            "classes": "labelStyles"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Brew Type"
+        },
+        "position": {
+          "basis": "55px"
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "indirect",
+                "references": {
+                  "stationNum": "{view.params.stationNum}"
+                },
+                "tagPath": "[default]Station {stationNum}/brewType.value"
+              },
+              "transforms": [
+                {
+                  "expression": "concat(\"Brew Type: \", {value})",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "textStyle": {
+            "classes": "labelStyles"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Water Temeperature"
+        },
+        "position": {
+          "basis": "61px"
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "indirect",
+                "references": {
+                  "stationNum": "{view.params.stationNum}"
+                },
+                "tagPath": "[default]Station {stationNum}/waterTemp.value"
+              },
+              "transforms": [
+                {
+                  "formatType": "numeric",
+                  "formatValue": "##.##",
+                  "type": "format"
+                },
+                {
+                  "expression": "concat(\"Water Temp: \", {value}, \" °C\")",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "textStyle": {
+            "classes": "labelStyles"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Station Status Label"
+            },
+            "position": {
+              "basis": "47px"
+            },
+            "props": {
+              "text": "Station Status:",
+              "textStyle": {
+                "classes": "labelStyles"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Station Status Change"
+            },
+            "position": {
+              "basis": "33.3px"
+            },
+            "propConfig": {
+              "props.enabled": {
+                "access": "PUBLIC",
+                "binding": {
+                  "config": {
+                    "expression": "isAuthorized(true, \u0027Authenticated/Roles/Roaster\u0027)"
+                  },
+                  "type": "expr"
+                }
+              },
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "bidirectional": true,
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {
+                      "stationNum": "{view.params.stationNum}"
+                    },
+                    "tagPath": "[default]Station {stationNum}/status.value"
+                  },
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "align": "left",
+              "format": "0,0",
+              "inputBounds": {
+                "maximum": 2,
+                "minimum": 0
+              },
+              "mode": "button",
+              "placeholder": "Enter a number: "
+            },
+            "type": "ia.input.numeric-entry-field"
+          },
+          {
+            "meta": {
+              "name": "0 \u003d off"
+            },
+            "position": {
+              "basis": "32px"
+            },
+            "props": {
+              "text": "0 \u003d OFF"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "1 \u003d brew"
+            },
+            "position": {
+              "basis": "32px"
+            },
+            "props": {
+              "text": "1 \u003d BREW"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "2 \u003d clean"
+            },
+            "position": {
+              "basis": "32px"
+            },
+            "props": {
+              "text": "2 \u003d CLEAN"
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "Station Status Flex Container"
+        },
+        "position": {
+          "basis": "202px"
+        },
+        "props": {
+          "alignItems": "center",
+          "direction": "column",
+          "justify": "center"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "Brew Chamber Image Vessel"
+        },
+        "position": {
+          "basis": "187px"
+        },
+        "propConfig": {
+          "props.state": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "indirect",
+                "references": {
+                  "stationNum": "{view.params.stationNum}"
+                },
+                "tagPath": "[default]Station {stationNum}/status.value"
+              },
+              "transforms": [
+                {
+                  "fallback": null,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": 0,
+                      "output": "stopped"
+                    },
+                    {
+                      "input": 1,
+                      "output": "running"
+                    },
+                    {
+                      "input": 2,
+                      "output": "faulted"
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "label": {
+            "text": "Brew Chamber"
+          },
+          "value": {
+            "displayValueAsPercent": false,
+            "location": "hidden"
+          }
+        },
+        "type": "ia.symbol.vessel"
+      },
+      {
+        "children": [
+          {
+            "events": {
+              "component": {
+                "onActionPerformed": {
+                  "config": {
+                    "draggable": true,
+                    "id": "96mSiJTi",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "position": {
+                      "relativeLocation": "top"
+                    },
+                    "positionType": "relative",
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "{view.params.stationNum}"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Popup Screen Details Button"
+            },
+            "position": {
+              "basis": "96px"
+            },
+            "props": {
+              "text": "Details"
+            },
+            "type": "ia.input.button"
+          }
+        ],
+        "meta": {
+          "name": "Details Flex Container"
+        },
+        "position": {
+          "basis": "49px"
+        },
+        "props": {
+          "alignItems": "center",
+          "justify": "center"
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "alignContent": "center",
+      "direction": "column",
+      "justify": "center",
+      "wrap": "wrap"
+    },
+    "type": "ia.container.flex"
+  }
+}

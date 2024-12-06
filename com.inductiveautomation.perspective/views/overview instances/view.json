@@ -1,0 +1,1601 @@
+{
+  "custom": {},
+  "params": {
+    "numCounter": 1
+  },
+  "propConfig": {
+    "params.numCounter": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "51tMYaH-",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "position": {
+                      "relativeLocation": "bottom"
+                    },
+                    "positionType": "relative",
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "1"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Brew Station 1"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "propConfig": {
+              "props.state": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]Station 1/status.value"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": null,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": "stopped"
+                        },
+                        {
+                          "input": 1,
+                          "output": "running"
+                        },
+                        {
+                          "input": 2,
+                          "output": "faulted"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "label": {
+                "text": "Brew Station 1"
+              },
+              "value": {
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "nWMDFcD_",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "2"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Brew Station 2"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "propConfig": {
+              "props.state": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]Station 2/status.value"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": null,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": "stopped"
+                        },
+                        {
+                          "input": 1,
+                          "output": "running"
+                        },
+                        {
+                          "input": 2,
+                          "output": "faulted"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "label": {
+                "text": "Brew Station 2"
+              },
+              "value": {
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "nqP-8PwO",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "3"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Brew Station 3"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "propConfig": {
+              "props.state": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]Station 3/status.value"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": null,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": "stopped"
+                        },
+                        {
+                          "input": 1,
+                          "output": "running"
+                        },
+                        {
+                          "input": 2,
+                          "output": "faulted"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "label": {
+                "text": "Brew Station 3"
+              },
+              "value": {
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "2vnQszxM",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "4"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Brew Station 4"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "propConfig": {
+              "props.state": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]Station 4/status.value"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": null,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": "stopped"
+                        },
+                        {
+                          "input": 1,
+                          "output": "running"
+                        },
+                        {
+                          "input": 2,
+                          "output": "faulted"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "label": {
+                "text": "Brew Station 4"
+              },
+              "value": {
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "87OsEyK_",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "5"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Brew Station 5"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "propConfig": {
+              "props.state": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]Station 5/status.value"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": null,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": "stopped"
+                        },
+                        {
+                          "input": 1,
+                          "output": "running"
+                        },
+                        {
+                          "input": 2,
+                          "output": "faulted"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "label": {
+                "text": "Brew Station 5"
+              },
+              "value": {
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          }
+        ],
+        "meta": {
+          "name": "Flex row 1"
+        },
+        "position": {
+          "basis": "200px"
+        },
+        "props": {
+          "alignItems": "center",
+          "justify": "space-evenly"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "51tMYaH-",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "position": {
+                      "relativeLocation": "bottom"
+                    },
+                    "positionType": "relative",
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "6"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Brew Station 6"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "propConfig": {
+              "props.state": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]Station 1/status.value"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": null,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": "stopped"
+                        },
+                        {
+                          "input": 1,
+                          "output": "running"
+                        },
+                        {
+                          "input": 2,
+                          "output": "faulted"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "label": {
+                "text": "Brew Station 6"
+              },
+              "value": {
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "nWMDFcD_",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "7"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Brew Station 7"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "propConfig": {
+              "props.state": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]Station 2/status.value"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": null,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": "stopped"
+                        },
+                        {
+                          "input": 1,
+                          "output": "running"
+                        },
+                        {
+                          "input": 2,
+                          "output": "faulted"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "label": {
+                "text": "Brew Station 7"
+              },
+              "value": {
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "nqP-8PwO",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "8"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Brew Station 8"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "propConfig": {
+              "props.state": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]Station 3/status.value"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": null,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": "stopped"
+                        },
+                        {
+                          "input": 1,
+                          "output": "running"
+                        },
+                        {
+                          "input": 2,
+                          "output": "faulted"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "label": {
+                "text": "Brew Station 8"
+              },
+              "value": {
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "2vnQszxM",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "9"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Brew Station 9"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "propConfig": {
+              "props.state": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]Station 4/status.value"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": null,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": "stopped"
+                        },
+                        {
+                          "input": 1,
+                          "output": "running"
+                        },
+                        {
+                          "input": 2,
+                          "output": "faulted"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "label": {
+                "text": "Brew Station 9"
+              },
+              "value": {
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "87OsEyK_",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "10"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Brew Station 10"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "propConfig": {
+              "props.state": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]Station 5/status.value"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": null,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": "stopped"
+                        },
+                        {
+                          "input": 1,
+                          "output": "running"
+                        },
+                        {
+                          "input": 2,
+                          "output": "faulted"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "label": {
+                "text": "Brew Station 10"
+              },
+              "value": {
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          }
+        ],
+        "meta": {
+          "name": "Flex row 2"
+        },
+        "position": {
+          "basis": "200px"
+        },
+        "props": {
+          "alignItems": "center",
+          "justify": "space-evenly"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "51tMYaH-",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "position": {
+                      "relativeLocation": "bottom"
+                    },
+                    "positionType": "relative",
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "11"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Brew Station 11"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "propConfig": {
+              "props.state": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]Station 1/status.value"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": null,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": "stopped"
+                        },
+                        {
+                          "input": 1,
+                          "output": "running"
+                        },
+                        {
+                          "input": 2,
+                          "output": "faulted"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "label": {
+                "text": "Brew Station 11"
+              },
+              "value": {
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "nWMDFcD_",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "12"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Brew Station 12"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "propConfig": {
+              "props.state": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]Station 2/status.value"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": null,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": "stopped"
+                        },
+                        {
+                          "input": 1,
+                          "output": "running"
+                        },
+                        {
+                          "input": 2,
+                          "output": "faulted"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "label": {
+                "text": "Brew Station 12"
+              },
+              "value": {
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "nqP-8PwO",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "13"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Brew Station 13"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "propConfig": {
+              "props.state": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]Station 3/status.value"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": null,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": "stopped"
+                        },
+                        {
+                          "input": 1,
+                          "output": "running"
+                        },
+                        {
+                          "input": 2,
+                          "output": "faulted"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "label": {
+                "text": "Brew Station 13"
+              },
+              "value": {
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "2vnQszxM",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "14"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Brew Station 14"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "propConfig": {
+              "props.state": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]Station 4/status.value"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": null,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": "stopped"
+                        },
+                        {
+                          "input": 1,
+                          "output": "running"
+                        },
+                        {
+                          "input": 2,
+                          "output": "faulted"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "label": {
+                "text": "Brew Station 14"
+              },
+              "value": {
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "87OsEyK_",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "15"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Brew Station 15"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "propConfig": {
+              "props.state": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]Station 5/status.value"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": null,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": "stopped"
+                        },
+                        {
+                          "input": 1,
+                          "output": "running"
+                        },
+                        {
+                          "input": 2,
+                          "output": "faulted"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "label": {
+                "text": "Brew Station 15"
+              },
+              "value": {
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          }
+        ],
+        "meta": {
+          "name": "Flex row 3"
+        },
+        "position": {
+          "basis": "200px"
+        },
+        "props": {
+          "alignItems": "center",
+          "justify": "space-evenly"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "51tMYaH-",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "position": {
+                      "relativeLocation": "bottom"
+                    },
+                    "positionType": "relative",
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "16"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Brew Station 16"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "propConfig": {
+              "props.state": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]Station 1/status.value"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": null,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": "stopped"
+                        },
+                        {
+                          "input": 1,
+                          "output": "running"
+                        },
+                        {
+                          "input": 2,
+                          "output": "faulted"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "label": {
+                "text": "Brew Station 16"
+              },
+              "value": {
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "nWMDFcD_",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "17"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Brew Station 17"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "propConfig": {
+              "props.state": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]Station 2/status.value"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": null,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": "stopped"
+                        },
+                        {
+                          "input": 1,
+                          "output": "running"
+                        },
+                        {
+                          "input": 2,
+                          "output": "faulted"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "label": {
+                "text": "Brew Station 17"
+              },
+              "value": {
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "nqP-8PwO",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "18"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Brew Station 18"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "propConfig": {
+              "props.state": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]Station 3/status.value"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": null,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": "stopped"
+                        },
+                        {
+                          "input": 1,
+                          "output": "running"
+                        },
+                        {
+                          "input": 2,
+                          "output": "faulted"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "label": {
+                "text": "Brew Station 18"
+              },
+              "value": {
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "2vnQszxM",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "19"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Brew Station 19"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "propConfig": {
+              "props.state": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]Station 4/status.value"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": null,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": "stopped"
+                        },
+                        {
+                          "input": 1,
+                          "output": "running"
+                        },
+                        {
+                          "input": 2,
+                          "output": "faulted"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "label": {
+                "text": "Brew Station 19"
+              },
+              "value": {
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "87OsEyK_",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "instanceParam": "20"
+                    },
+                    "viewPath": "Popup Details",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Brew Station 20"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "propConfig": {
+              "props.state": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]Station 5/status.value"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": null,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": "stopped"
+                        },
+                        {
+                          "input": 1,
+                          "output": "running"
+                        },
+                        {
+                          "input": 2,
+                          "output": "faulted"
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "label": {
+                "text": "Brew Station 20"
+              },
+              "value": {
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          }
+        ],
+        "meta": {
+          "name": "Flex row 4"
+        },
+        "position": {
+          "basis": "200px"
+        },
+        "props": {
+          "alignItems": "center",
+          "justify": "space-evenly"
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "justify": "space-evenly"
+    },
+    "type": "ia.container.flex"
+  }
+}

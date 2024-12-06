@@ -1,0 +1,48 @@
+{
+  "custom": {},
+  "params": {},
+  "permissions": {
+    "securityLevels": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [],
+                "name": "Administrator"
+              }
+            ],
+            "name": "Roles"
+          }
+        ],
+        "name": "Authenticated"
+      }
+    ],
+    "type": "AnyOf"
+  },
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Overview Embedded View Template"
+        },
+        "position": {
+          "basis": "320px",
+          "grow": 1
+        },
+        "props": {
+          "path": "overview instances"
+        },
+        "type": "ia.display.view"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

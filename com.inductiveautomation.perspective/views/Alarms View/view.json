@@ -1,0 +1,155 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "AlarmStatusTable"
+                },
+                "position": {
+                  "basis": "800px",
+                  "grow": 1
+                },
+                "props": {
+                  "columns": {
+                    "active": {
+                      "displayPath": {
+                        "order": 2
+                      },
+                      "name": {
+                        "order": 5
+                      },
+                      "priority": {
+                        "order": 1
+                      }
+                    }
+                  },
+                  "filters": {
+                    "active": {
+                      "states": {
+                        "activeAcked": false,
+                        "activeUnacked": false,
+                        "clearUnacked": false
+                      }
+                    }
+                  }
+                },
+                "type": "ia.display.alarmstatustable"
+              }
+            ],
+            "meta": {
+              "name": "Alarm Status Table Flex Container"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "AlarmJournalTable"
+                },
+                "position": {
+                  "basis": "800px",
+                  "grow": 1
+                },
+                "props": {
+                  "columns": {
+                    "eventValue": {
+                      "enabled": true
+                    },
+                    "label": {
+                      "enabled": true
+                    },
+                    "name": {
+                      "enabled": true
+                    },
+                    "state": {
+                      "enabled": true
+                    }
+                  },
+                  "dateRange": {
+                    "historical": {
+                      "endDate": {
+                        "$": [
+                          "ts",
+                          0,
+                          1733481071278
+                        ],
+                        "$ts": 1734130740000
+                      },
+                      "startDate": {
+                        "$": [
+                          "ts",
+                          0,
+                          1733481082595
+                        ],
+                        "$ts": 1733271644000
+                      }
+                    },
+                    "mode": "historical",
+                    "realtime": {
+                      "interval": 4
+                    }
+                  },
+                  "filter": {
+                    "events": {
+                      "acked": false,
+                      "active": false,
+                      "cleared": false
+                    },
+                    "priorities": {
+                      "critical": false,
+                      "high": false,
+                      "low": false,
+                      "medium": false
+                    }
+                  }
+                },
+                "type": "ia.display.alarmjournaltable"
+              }
+            ],
+            "meta": {
+              "name": "Alarm Journal Table Flex Container"
+            },
+            "position": {
+              "tabIndex": 1
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "Alarm Tab Container"
+        },
+        "position": {
+          "basis": "300px",
+          "grow": 1
+        },
+        "props": {
+          "currentTabIndex": 1,
+          "tabSize": {
+            "height": 47,
+            "width": 250
+          },
+          "tabs": [
+            "Alarm Status Table",
+            "Alarm Journal Table"
+          ]
+        },
+        "type": "ia.container.tab"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}
