@@ -1,0 +1,27 @@
+services:
+  gateway1:
+    image: inductiveautomation/ignition
+    ports:
+      - 9088:8088
+    volumes:
+      - gateway-data:/usr/local/bin/ignition/data
+    environment:
+      - IGNITION_EDITION=standard
+      - GATEWAY_ADMIN_PASSWORD=password
+      - ACCEPT_IGNITION_EULA=Y
+    command: >
+      -n Rio-Oso
+      -m 2048
+  db:
+    image: mysql
+    restart: always
+    ports:
+      - 3306:3306
+    volumes:
+      - db-data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=ys98XWmB
+      - MYSQL_DATABASE=ignition_db
+volumes:
+  gateway-data:    
+  db-data:      
